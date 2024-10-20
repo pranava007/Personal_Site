@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Navbar } from "flowbite-react";
 import { Link, useLocation } from 'react-router-dom';
-import DownloadButton from './DownloadButton';
+import Download from './Download';
 
 const Header = () => {
     const path = useLocation().pathname;
@@ -14,8 +14,8 @@ const Header = () => {
             </Navbar.Brand>
             <div className="flex md:order-2">
 
-              <DownloadButton/>
-              
+              <Download/>
+
                 <Navbar.Toggle />
             </div>
             <Navbar.Collapse>

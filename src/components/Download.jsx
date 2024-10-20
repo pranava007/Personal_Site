@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'flowbite-react'; // Ensure flowbite-react is installed
 
 
-const DownloadButton = () => {
+const Download = () => {
 
   const downloadResume = () => {
     // Trigger a download programmatically
@@ -22,4 +22,4 @@ const DownloadButton = () => {
   );
 };
 
-export default DownloadButton;
+export default Download;
