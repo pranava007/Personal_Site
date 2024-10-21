@@ -7,6 +7,7 @@ import About from './pages/About'
 import Skill from './pages/Skill'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
+import Gallery from './pages/gallery'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
     <Route path='/about' element={<About/>}/>
     <Route path='/skill' element={<Skill/>}/>
     <Route path='/portfolio' element={<Portfolio/>}/>
+    <Route path='/gallery' element={<Gallery/>}/>
     <Route path='/contact' element={<Contact/>}/>
    </Routes>
    <Foter/>

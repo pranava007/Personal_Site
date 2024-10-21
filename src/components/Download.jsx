@@ -11,7 +11,7 @@ const Download = () => {
   }
 
   return (
-    <Button onClick={downloadResume} className="bg-gradient-to-r from-teal-400 to-blue-500">
+    <Button onClick={downloadResume} className=" pacifico-regular bg-gradient-to-r from-teal-400 to-blue-500">
       Download CV
     </Button>
   );
