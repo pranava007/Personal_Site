@@ -7,7 +7,7 @@ import About from './pages/About'
 import Skill from './pages/Skill'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
-import Gallery from './pages/gallery'
+import Gallery from './pages/Gallery'
 
 function App() {
 
