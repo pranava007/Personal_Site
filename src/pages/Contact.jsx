@@ -4,8 +4,27 @@ const Contact = () => {
   return (
     <div className="flex p-6 mt-10 max-w-4xl mx-auto flex-col md:flex-row md:items-start mb-80">
       {/* Left Section */}
-     
-
+      <div className="flex-1 bg-white shadow-lg rounded-lg p-6 mb-6 md:mb-0 md:mr-6 dark:bg-gray-800">
+        <h2 className="text-2xl font-semibold mb-4 dark:text-white">Contact Information</h2>
+        <p className="text-gray-900 dark:text-gray-300">
+          <strong>Name:</strong> Pranavamuthu
+        </p>
+        <p className="text-gray-900 dark:text-gray-300 mt-2">
+          <strong>Email:</strong> pranavamuthu000@gmail.com
+        </p>
+        <p className="text-gray-900 dark:text-gray-300 mt-2">
+          <strong>Mobile Number:</strong> 6383218808
+        </p>
+        <p className="text-gray-900 dark:text-gray-300 mt-4">
+          <strong>GitHub:</strong> <a href="https://github.com/pranava007" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">🌐 github.com/pranava007</a>
+        </p>
+        <p className="text-gray-900 dark:text-gray-300 mt-2">
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pranava-muthu-po-5609921b9/" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">🔗 linkedin.com/in/pranava-muthu</a>
+        </p>
+        <p className="text-gray-900 dark:text-gray-300 mt-2">
+          <strong>WhatsApp:</strong> <a href="https://wa.me/6383218808" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">📱 +91 6383218808</a>
+        </p>
+      </div>
 
       {/* Right Section - Contact Form */}
       <div className="flex-1 bg-white shadow-lg rounded-lg p-6 dark:bg-gray-800">

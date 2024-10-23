@@ -125,39 +125,76 @@ const Skill = () => {
   ];
 
   return (
-    <>
-           
-{/* <h1 className="font-black m-5">Skill Set</h1> */}
-<div className="grid grid-cols-6 m-5 mt-10 mb-64 gap-4">
-  {skillicon.map((skill, index) => (
-    <div key={index} className="flex flex-col items-center p-5">
-      <div className="h-24 w-24 mb-5 flex justify-center items-center p-5 rounded-full  animate-gradient-outline">
-        {skill.icon}
+<>
+  {/* Skill Set Section */}
+  <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12">
+    <div className="max-w-7xl mx-auto text-center">
+      <h2 className="text-4xl font-extrabold text-gray-900 dark:text-gray-100 mb-10">
+        My <span className="text-blue-500">Skill Set</span>
+      </h2>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+        {skillicon.map((skill, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-center p-5 transform hover:scale-105 transition-transform duration-300"
+          >
+            <div className="h-20 w-20 sm:h-24 sm:w-24 mb-4 flex justify-center items-center p-5 rounded-full animate-gradient-outline bg-gradient-to-r from-blue-500 to-teal-400 shadow-lg">
+              {skill.icon}
+            </div>
+            {/* Skill Name */}
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200">
+              {skill.name}
+            </h3>
+          </div>
+        ))}
       </div>
-      {/* <h3 className="text-xl font-semibold">{skill.name}</h3> */}
     </div>
-  ))}
-</div>
+  </div>
 
-<style jsx>{`
-  @keyframes gradient-outline {
-    0% {
-      box-shadow: 0 0 0 4px rgba(19, 92, 165, 0.8);
+  <style jsx>{`
+    @keyframes gradient-outline {
+      0% {
+        box-shadow: 0 0 0 4px rgba(19, 92, 165, 0.8);
+      }
+      50% {
+        box-shadow: 0 0 0 4px rgba(29, 201, 183, 0.8);
+      }
+      100% {
+        box-shadow: 0 0 0 4px rgba(19, 92, 165, 0.8);
+      }
     }
-    50% {
-      box-shadow: 0 0 0 4px rgba(29, 201, 183, 0.8);
-    }
-    100% {
-      box-shadow: 0 0 0 4px rgba(19, 92, 165, 0.8);
-    }
-  }
 
-  .animate-gradient-outline {
-    animation: gradient-outline 3s infinite;
-  }
-`}</style>
+    .animate-gradient-outline {
+      animation: gradient-outline 3s infinite;
+    }
 
-    </>
+    /* Responsive grid adjustments */
+    .grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media (min-width: 640px) {
+      .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+      }
+    }
+  `}</style>
+</>
+
+  
   );
 };
 
