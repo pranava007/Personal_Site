@@ -5,7 +5,7 @@ const Download = () => {
 
   const downloadResume = () =>{
     const link = document.createElement("a")
-    link.href="/pranavamuth.pdf"
+    link.href="/pranavamuth_resuma_1.pdf"
     link.download="pranavamuhtu_resume.pdf"
     link.click()
   }
