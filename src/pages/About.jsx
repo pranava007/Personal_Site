@@ -46,7 +46,7 @@ const About = () => {
           
           <p className="mt-4 text-lg leading-relaxed text-gray-800 dark:text-gray-300 flex items-center">
             <i className="fas fa-chalkboard-teacher text-blue-500 mr-2"></i>
-            I managed 50 students at Mahindra Engineering College and Anna University.
+            I managed 120 students at Mahindra Engineering College and Anna University.
           </p>
   
           <p className="mt-4 text-lg leading-relaxed text-gray-800 dark:text-gray-300 flex items-center">
